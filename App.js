@@ -38,6 +38,7 @@ export default function App() {
         <Stack.Screen name="EditProfil" component={EditProfil} />
         <Stack.Screen name="EditAkun" component={EditAkun} />
         <Stack.Screen name="ResetPass" component={ResetPass} />
+
         {/* <Stack.Screen name="Register" component={Register} /> */}
         {/* <Stack.Screen name="coba" component={Coba} /> */}
       </Stack.Navigator>

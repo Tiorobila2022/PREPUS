@@ -54,7 +54,6 @@ function Login({ navigation }) {
     if (!isValidLength.test(value)) {
       return "Kata sandi harus terdiri dari 8-16 Karakter.";
     }
-
     return null;
   };
 
@@ -88,6 +87,7 @@ function Login({ navigation }) {
         alert("Login Gagal !!");
       });
   };
+
   // const cekPassword = cekPasswordValidate(password_hash);
   // if (!cekPassword) {
   //   let data = { email: "tiohidayat@students.polmed.ac.id", password_hash: "metromatika" };
@@ -119,7 +119,6 @@ function Login({ navigation }) {
   //     console.log("Berhasil Login");
   //   }
   // };
-
   // tokenLogin();
 
   const onRefresh = React.useCallback(() => {
@@ -196,8 +195,6 @@ function Login({ navigation }) {
           <TouchableOpacity onPress={() => navigation.navigate("Forgot")}>
             <Text style={{ color: "white", fontSize: 16, marginTop: 25 }}>Lupa Password ?</Text>
           </TouchableOpacity>
-
-          <View></View>
         </View>
       </ScrollView>
     </SafeAreaView>
